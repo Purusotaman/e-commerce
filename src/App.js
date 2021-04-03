@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import {  Switch, Route  } from "react-router-dom";
+import HeaderComponent from "./components/header/header.component";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ const HatsPage = () => (
 function App() {
   return (
     <div className='body'>
+      <HeaderComponent/>
       <Switch>
         <Route exact path="/" component={HomePage}  />
         <Route exact path="/shop" component={ShopPage}  />
